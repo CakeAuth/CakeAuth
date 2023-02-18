@@ -1,44 +1,52 @@
-<a href="https://trello.com/b/HQtJyZ37/tsauth"><img src="https://vscteam.de/wp-content/uploads/2021/03/Trello-Logo-1.png" alt="Our Trello List" width="200"></a>
+# sidebase-app
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/X8X0IQHTM)
+This is a [sidebase merino](https://sidebase.io/) app created by running `pnpm create sidebase@latest`. This project uses the following technologies for a great developer- and user-experience:
+- [TypeScript](https://www.typescriptlang.org/)
+- [Nuxt 3](https://nuxt.com)
+- Prisma ORM
+- tRPC 10
+- Naive UI
 
-<!--- # Normal User
+## How to get going?
 
-### Windows
-1. Download TSA-CLI.bat
-1. Start TSA-CLI.bat
-1. Enter Y or Yes/YES to install TSAuth
-1. Enter N or No/NO to cancel the installation
+This is a straight-forward setup with minimal templating and scaffolding. The options you selected during the sidebase CLI setup are all here though. Good places to continue reading are:
+- [the First Steps documentation](https://sidebase.io/sidebase/usage)
+- [our discord](https://discord.gg/auc8eCeGzx)
 
-### Linux
-1. Download TSA-CLI.sh
-1. Start TSA-CLI.sh
-1. Enter Y or Yes/YES to install TSAuth
-1. Enter N or No/NO to cancel the installation
---->
-# Developer
+Some tasks you should probably do in the beginning are:
+- [ ] replace this generic README with a more specific one
+- [ ] install the Vue Volar extension
+- [ ] enable [Volar takeover mode](https://nuxt.com/docs/getting-started/installation#prerequisites) to ensure a smooth editor setup
+- [ ] [install Nuxt 3 devtools](https://github.com/nuxt/devtools#installation) if you want to use them
+- [ ] Prisma: Edit your `prisma/prisma.schema` to your liking
+- [ ] Prisma: Run `npx prisma db push` to sync the schema to your database & generate the Prisma Client
 
-### Installation
+### Setup
 
-1. [SurrealDB Installieren](https://surrealdb.com/install)
-2. Node.js Installieren wenn nicht vorhanden
-3. Optional [pnpm installieren](https://pnpm.io/installation)
-4. Init Command ausführen
-    * npm run init:npm
-    * yarn init:yarn
-    * pnpm init: pnpm
+Make sure to install the dependencies:
 
-### Stack
-* Nuxt/Vue 3
-* TypeScript
-* SurrealDB
-* Sass
+```bash
+pnpm install
+```
 
-### Packages
-* Nuxt Icons
-* ZOD
-* tRPC
-* Chalk (CMD Colors)
-* VeeValidate + Yup
-* Pinia
-* Argon 2
+### Development Server
+
+Start the development server on http://localhost:3000
+
+```bash
+pnpm run dev
+```
+
+### Production
+
+Build the application for production:
+
+```bash
+pnpm run build
+```
+
+Locally preview production build:
+
+```bash
+pnpm run preview
+```
